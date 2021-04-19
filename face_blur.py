@@ -57,18 +57,5 @@ else:       # Image
 
     print("Found {0} face(s)!".format(len(faces)))
 
-    # Blur the faces
-    """for (x, y, w, h) in faces:
-
-        factor = 3.0
-        kW = int(w/factor)
-        kH = int(h/factor)
-        if kW%2 == 0:
-            kW -= 1
-        if kH%2 == 0:
-            kH -=1
-
-        image[y:y+h, x:x+w] = cv2.GaussianBlur(image[y:y+h, x:x+w], (kW, kH), 0)"""
-
     cv2.imshow("Faces found", image)
     cv2.waitKey(0)
