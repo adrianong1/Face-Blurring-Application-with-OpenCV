@@ -7,5 +7,9 @@ How to run code:
 - To run using your webcam, enter: python3 face_blur.py live
   * Running this program live will most likely request your computer for camera permissions, so if you do not accept fast enough, the program will crash
   * Once the user has given the program webcam permissions, the live portion of the program will run smoothly
-- To quit after the photo is displayed, hit any key
+
+- To quit after the blurred photo is displayed, hit any key
+  * If this doesn't work, click the blurred image, then enter any key
+
 - To quit the live video feed, enter: q
+  * If this doesn't work, click the live video window, then enter: q
