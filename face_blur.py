@@ -57,5 +57,5 @@ else:       # Image
 
     print("Found {0} face(s)!".format(len(faces)))
 
-    cv2.imshow("Faces found", image)
+    cv2.imshow("Blurred Image", image)
     cv2.waitKey(0)
