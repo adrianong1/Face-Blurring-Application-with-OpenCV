@@ -20,15 +20,15 @@ def find_faces(grey):
 def blur_faces(faces, frameOrImage):
     for (x, y, w, h) in faces:
 
-        factor = 3.0
-        kW = int(w/factor)
-        kH = int(h/factor)
-        if kW%2 == 0:
-            kW -= 1
-        if kH%2 == 0:
-            kH -=1
+        factor = 2.0
+        kernelW = int(w/factor)
+        kernelH = int(h/factor)
+        if kernelW%2 == 0:
+            kernelW -= 1
+        if kernelH%2 == 0:
+            kernelH -=1
 
-        frameOrImage[y:y+h, x:x+w] = cv2.GaussianBlur(frameOrImage[y:y+h, x:x+w], (kW, kH), 0)
+        frameOrImage[y:y+h, x:x+w] = cv2.GaussianBlur(frameOrImage[y:y+h, x:x+w], (kernelW, kernelH), 0)
 
 # Split into either a photo of webcam
 if imageOrLivePath == "live":       # Webcam
